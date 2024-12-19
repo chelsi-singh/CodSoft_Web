@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 10px;
+    color: white;
+    background-color: #000;
+    font-family: "Poppins",sans-serif;
+    transition: .1s;
+}
+
+.profilepicture{
+    margin: 20px;
+    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+img{
+    user-select: none;
+    width: inherit;
+    height: inherit;
+    cursor: inherit;
+    pointer-events: inherit;
+    border-radius: 100%;
+    animation: fade 2s ease-in-out;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 100%;
+    height: 45vh;
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    pointer-events: none;
+    /* border-bottom:5px solid #00bfff; */
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: max-content;
+    width: max-content;
+    margin: 80px;
+    margin-left: 30px;
+    column-gap: 100px;
+
+}
+
+.title span{
+    position: relative;
+    font-family: "Newsreader",sans-serif;
+    font-size: 80px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-left: -1.5rem;
+    animation: fade 2s ease-in-out;
+} 
+.title #surname{
+    font-family: "dancing script",serif;
+    font-size: 80px;
+    color: #B47E28;
+    position: relative;
+    left: 50%;
+    margin-top: -3.5rem;
+    animation: glow 3s infinite, fade 4s ease-in-out;
+}
+
+@keyframes glow {
+    0%{
+        text-shadow:none;
+    }
+    50%{
+        text-shadow:0 0 20px #ff9d00;
+    }
+    100%{
+        text-shadow: none;
+    }
+}
+
+#music{
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    animation: fade 2s ease-in-out;
+}
+#o{
+    animation: fade .5s ease-in-out;
+}
+#t{
+    animation: fade 1s ease-in-out;
+}
+#th{
+    animation : fade 1.5s ease-in-out;
+}
+
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+ul{
+    position: absolute;
+    display: flex;
+    right: 2%;
+    padding: 15px;
+}
+ul li{
+    position: relative;
+    list-style-type: none;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding: 12px 18px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: .3s;
+    overflow: hidden;
+    border-radius: 20%;
+    height: fit-content;
+    width: fit-content;
+}
+
+ul li:hover{
+    color: #00bfff;
+    
+}
+
+
+.social{
+    position: absolute;
+    flex-direction: row;
+    bottom: 5%;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+.social:hover{
+    color: #B47E28;
+}
+#ig{
+    animation: fade 1.5s ease-in-out;
+}
+#li{
+    animation: fade 1s ease-in-out;
+}
+#git{
+    border-radius: 100%;
+    height: fit-content;
+    width: fit-content;
+    animation: fade .5s ease-in-out;
+}
+
+.bganimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: black;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox{
+    height: auto;
+    width: auto;
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: rgb(0, 0, 0);
+    border-radius: 10%;
+}
+.colorBox:hover{
+    background: #00bfff;
+    transition-duration: 0s;
+}
+
+.backgroundani{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #00bfff;
+    filter: blur(60px);
+    animation: back 6s ease-in-out infinite;
+}
+
+@keyframes back{
+    0%{
+        top: -60px;
+    }
+    50%{
+        top: 120%;
+    }
+    100%{
+        top: -60px;
+    }
+}
+
+.open{
+    display: flex;
+    margin: 40px;
+    width: fit-content;
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    gap: 10px;
+}
+.greet{
+    text-underline-offset:auto ;
+    position: relative;
+    font-family: "montserrat",sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+#mark{
+    color: #00bfff;
+    animation: fade 2s ease-in-out,jump 2s ease-in-out;
+}
+.open span{
+    font-size: 6rem;
+    animation: jump 1s ease-in-out,fade 2s ease-in-out;
+}
+.open p{
+    color: #00bfff;
+    animation: fade 6s ease-in-out;
+
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes typing {
+    from { 
+        width: 0 
+    }
+    to{
+        width: 100;
+    }
+}
+@keyframes jump {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+.card{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: black;
+}

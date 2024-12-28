@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/3774e24d1c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
     <nav>
         <div class="bganimation" id="bganimation">
             <div class="backgroundani">
@@ -18,37 +20,152 @@
             </div>
         </div>
         <div class="container">
-            <div class="profilepicture"><img src="profile.jpg" alt="jpg"></div>
+            <div class="profilepicture"><img src="images\profile.jpg" alt="jpg"></div>
             <div class="title">
-                <span>Chelsi</span>
+              <div class="name">
+                <span id="C">C</span>
+                <span id="H">h</span>
+                <span id="E">e</span>
+                <span id="L">l</span>
+                <span id="S">s</span>
+                <span id="I">i</span>
+              </div>
                 <span id="surname"> Singh</span>
             </div>
-                <ul>
-                    <li id="o">Contact</li>
-                    <li id="t">Projects</li>
-                    <li id="th">Certification</li>
-                    <li id="music"><i class="fa fa-reply" aria-hidden="true"></i></li>
+
+                <ul class="nav-links">
+                    <li id="o"><a href="www.linkedin.com/in/chelsi-singh">Contact</a></li>
+                    <li id="t"><a href="#projects">Projects</a></li>
+                    <li id="th"><a href="#certification">Certification</a></li>
+                    <li id="music"><a href="#"><i class="fa fa-reply" aria-hidden="true"></a></i></li>
                 </ul>
                 <ul class="social">
-                    <li id="ig"><i class="fa-brands fa-instagram"></i></li>
-                    <li id="li"><i class="fa fa-linkedin" aria-hidden="true"></i></i></li>
-                    <li id="git"><i class="fa fa-github" aria-hidden="true"></i></li>
+                    <li id="ig"><a href="https://www.instagram.com/_cssssss_?igsh=cXJmOWRxcjVrYThw"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li id="li"><a href="www.linkedin.com/in/chelsi-singh"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li id="git"><a href="https://github.com/chelsi-singh"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 </ul>
     </nav>
+    <!-- <div class="snake"></div>
+    <div class="snake2"></div>
+    <div class="snake3"></div> -->
     <section>
-        <div class="open">
-            <div class="greet"><span>WELCOME</span><span id="mark">!</span></div>
+      <div class="cover">
+            <div class="greet">
+              <span>WELCOME</span>
+              <span id="mark">!</span>
+            </div>
             <br>
-            <p>This is my personal portfolio website, Here you will find my Projects, Certifications, My Skills, and you will get to know about my professional journey. <br>This site is created as a task for CodSoft-Web Development internship program.</p>
+          <div class="open">
+            <p>This is my personal portfolio website,</p><br> <p> you will find my Projects, Certifications, My Skills, and you will get to know about my professional journey. </p><br><p>This site is created as a task for CodSoft-Web Development internship program.</p>
+          </div>
+      </div>
+      <div class="projects" id="projects">Projects
+      <div class="line">
+      <div class="line2">
+        <div class="pj2">
+          <img src="images\foodie golf.png" alt="landing">
+          <div class="card__content">
+            <p class="card__title">Cafe Explorer</p>
+            <p class="card__description">Cafe Explorer helps the users to find best cafe's in their nearby area, rate them and suggests more fun activities to do, socialise the cafe experience.</p>
+            <button class="card__button">Live Demo</button>
+      </div>
         </div>
-        <div class="card">kiii
-            <div class="block">23</div>
-            <div class="block">23</div>
-            <div class="block">23</div>
-            <div class="block">23</div>
+      </div>
+      <div class="line3">
+        <div class="pj1">
+          <img src="images\realme.png" alt="landing">
+          <div class="card__content">
+            <p class="card__title">Realm - A Community</p>
+            <p class="card__description">Realm is a community, which is based on social media solely and helps the users to gain knowledge, get guidance, mentorship, help related to any topic, this project is made in collaboration with my teammates.</p>
+            <button class="card__button">Live Demo</button>
+          </div>
+        </div>
+    </div>
+      <div class="line4"><div class="pj3">
+        <img src="images\tourism.avif" alt="Toursism Web">
+        <div class="card__content">
+          <p class="card__title">Tourism Website</p>
+          <p class="card__description">This project is a Tourism website, which helps the users to fetch nearby services for convienience, travel, foods, and more.</p>
+          <button class="card__button">Live Demo</button>
+        </div>
+      </div>
+    </div>
+    <div class="line5"><div class="pj3">
+      <img src="images\personal.png" alt="Portfolio">
+      <div class="card__content">
+        <p class="card__title">Personal Portfolio</p>
+        <p class="card__description">This project is made for my internship in CodeSoft and this website reflects my professional journey, skills and projects.</p>
+        <button class="card__button">Live Demo</button>
+      </div>
+    </div></div>
+  </div>
+  <div id="research" class="research">Research Papers
+    <div class="line6">
+        <ul class="paper">
+          <li><a href="#">"Machine Learning model on sensor architecture and technology."</a></li>
+          <li><a href="#">"Search engine optimization and its impact on business."</a></li>
+          <li><a href="#">"Creativity and its importance in the digital age."</a> </li>
+          <li><a href="#">"Impact of problem solving skills on the success of a professional career."</a></li>
+        </ul>
+    </div>
+  </div>
+  <div id="certification" class="certification">Certifications
+    <div class="box">
+      <div class="content">
+        <div class="certificate">
+          <div class="certificate2"><img id="img1" src="images\codsoft.jpeg" alt=""><div class="text">CodeSoft Web Development</div>
+          </div>
+        </div>
+      
+        <div class="certificate">
+          <div class="certificate2"><img id="img2" src="images\cybersecurity.jpeg" alt="">
+            <div class="text">Forge Cybersecurity</div>
+          </div>
+        </div>
+        <div class="certificate">
+          <div class="certificate2"><img id="img3" src="images\eduskills.jpeg" alt="">
+            <div class="text">Eduskills Google Android Dev</div>
+          </div>
         </div>
 
+      
+        <div class="certificate">
+          <div class="certificate2"><img id="img4" src="images\leetcode.png" alt="">
+            <div class="text">LeetCode 50 days Badge</div>
+          </div>
+        </div>
+
+        <button id="certi" class="certi">View Certificates?</button>
+        </div>
+      </div>
+    </div>
+  <div class="line7"></div>
+  <div class="skills">Skills
+    <div class="skill">
+      <ul id="skills">
+      <li>Social Media Handling</li>
+      <li>Digital Marketing</li>
+      <li>Graphic Designing</li>
+      <li>Frontend Development</li>
+      </ul>
+      <ul id="skills1">
+        <li>Problem Solving</li>
+        <li>Management</li>
+        <li>Team Work</li>
+        <li>Communication</li>
+      </ul>
+    </div>
+  </div>
+</div>
     </section>
+<footer>
+  <p>Chelsi Singh</p>
+  <i>@chelsi-singh</i>
+  <ul id="foot">
+  <li><i class="fa fa-github" aria-hidden="true"></i></li>
+  <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+</ul>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>
